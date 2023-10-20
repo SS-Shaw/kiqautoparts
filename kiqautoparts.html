@@ -7,34 +7,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIQ Auto Parts</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-
-        .supplier-list {
-            list-style-type: none;
+        /* Reset some default browser styles */
+        body, h1, p, ul, li {
+            margin: 0;
             padding: 0;
+            font-family: 'Arial', sans-serif;
         }
 
-        .supplier-list li {
-            margin: 10px 0;
+        /* Basic styling */
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
         }
+
+        /* Container to center the content */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Header styling */
+        h1 {
+            text-align: center;
+            color: #444;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        /* List styling */
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            margin: 15px 0;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #007BFF;
+            border: 1px solid #007BFF;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        ul li a:hover {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
     </style>
 </head>
 
 <body>
-    <h1>KIQ Auto Parts</h1>
-    <p>Our Trusted Suppliers:</p>
+    <div class="container">
+        <h1>KIQ Auto Parts</h1>
+        <p>Our Trusted Suppliers:</p>
 
-    <ul class="supplier-list">
-        <li><a href="http://cbkauto.com/" target="_blank">CBK</a></li>
-        <li><a href="https://www.hotspotautoparts.com/resetsession.epc" target="_blank">HOTSPOTAUTO</a></li>
-        <li><a href="https://myplaceforparts.com/" target="_blank">VAST</a></li>
-        <!-- Add more suppliers as needed -->
-    </ul>
-
+        <ul>
+            <li><a href="http://cbkauto.com/" target="_blank">CBK</a></li>
+            <li><a href="https://www.hotspotautoparts.com/resetsession.epc" target="_blank">HOTSPOT</a></li>
+            <li><a href="https://myplaceforparts.com/" target="_blank">VAST</a></li>
+            <!-- Add more suppliers as needed -->
+        </ul>
+    </div>
 </body>
 
 </html>
