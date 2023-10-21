@@ -7,21 +7,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIQ Auto Parts</title>
     <style>
-        /* ... (previous styles) ... */
+        /* Overall page styling */
+        body {
+            background-color: #111; /* Dark background */
+            color: #f9f9f9; /* Light text */
+            font-size: 16px;
+            line-height: 1.6;
+            font-family: Arial, sans-serif; /* Adding a basic font for better readability */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Centered content container */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        /* Header styles */
+        h1 {
+            text-align: center;
+            color: #fff; /* White header text */
+            margin-bottom: 30px;
+            border-bottom: 2px solid #444; /* Subtle bottom border */
+            padding-bottom: 10px;
+        }
 
         /* Card styling */
         .category-card {
-            background-color: #f9f9f9;
+            background-color: #222; /* Slightly lighter than the background */
             margin-bottom: 20px;
-            padding: 15px;
+            padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s; /* Animation for hover effect */
         }
 
+        .category-card:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+        }
+
+        /* Category title styles */
         .category-title {
-            font-size: 1.2em;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            color: #f9f9f9; /* White text */
+        }
+
+        /* Supplier link styles */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li a {
+            display: block;
+            text-decoration: none;
+            color: #007BFF; /* Blue link text for contrast */
+            border: 1px solid #444; /* Border around the link */
             margin-bottom: 10px;
-            color: #444;
+            padding: 10px;
+            border-radius: 6px;
+            transition: background-color 0.2s; /* Hover animation */
+        }
+
+        ul li a:hover {
+            background-color: #333; /* Dark hover background */
+            color: #fff; /* White text on hover */
+        }
+
+        /* Footer styles */
+        .footer {
+            text-align: center;
+            margin-top: 30px;
         }
 
     </style>
@@ -31,7 +89,7 @@
     <div class="container">
         <h1>KIQ Auto Parts</h1>
 
-        <!-- General Parts Card -->
+        <!-- Categories -->
         <div class="category-card">
             <div class="category-title">General Parts</div>
             <ul>
@@ -41,7 +99,6 @@
             </ul>
         </div>
 
-        <!-- German Cars Card -->
         <div class="category-card">
             <div class="category-title">German Cars</div>
             <ul>
@@ -49,7 +106,6 @@
             </ul>
         </div>
 
-        <!-- Filters, Radiators, Condensers Card -->
         <div class="category-card">
             <div class="category-title">Filters, Radiators & Condensers</div>
             <ul>
@@ -57,7 +113,6 @@
             </ul>
         </div>
 
-        <!-- Body Parts Card -->
         <div class="category-card">
             <div class="category-title">Body Parts</div>
             <ul>
@@ -66,7 +121,6 @@
             </ul>
         </div>
 
-        <!-- Gas Gasket Card -->
         <div class="category-card">
             <div class="category-title">Gas Gasket</div>
             <ul>
@@ -74,7 +128,7 @@
             </ul>
         </div>
 
-        <!-- Optional footer -->
+        <!-- Footer -->
         <div class="footer">
             © 2023 KIQ Auto Parts. All Rights Reserved.
         </div>
